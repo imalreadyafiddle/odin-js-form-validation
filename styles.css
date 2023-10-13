@@ -8,3 +8,58 @@ body {
 h1 {
   text-align: center;
 }
+
+.angry {
+  color: crimson;
+  animation: tilt-shaking 0.13s infinite;
+  font-weight: bold;
+  font-size: x-large;
+  display: inline-block;
+}
+
+form > legend {
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+form {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+input[type="email"] {
+  border-radius: 5px;
+  border-style: none;
+  padding-left: 10px;
+  padding-top: 2px;
+  height: 20px;
+  width: 250px;
+}
+
+select {
+  border-radius: 5px;
+  height: 23px;
+  padding-left: 10px;
+}
+
+fieldset {
+  margin-bottom: 50px;
+}
+
+@keyframes tilt-shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0eg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
