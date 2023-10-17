@@ -88,6 +88,7 @@ function addFormValidation() {
   });
 }
 
+// apply validation event listeners when DOM elements are loaded
 document.addEventListener("DOMContentLoaded", () => {
   addFormValidation();
 });
